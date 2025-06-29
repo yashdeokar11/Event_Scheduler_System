@@ -5,7 +5,7 @@ app = Flask(__name__)
 
 @app.route("/")
 def home():
-    return "✅ Event Scheduler API is running!", 200
+    return "✅ Event Scheduler API is running! You can check through POSTMAN", 200
 
 @app.route("/events", methods=["POST"])
 def create_event():
